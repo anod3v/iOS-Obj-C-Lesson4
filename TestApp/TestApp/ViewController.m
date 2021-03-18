@@ -14,8 +14,6 @@
 
 @property (nonatomic, weak) MKMapView *mapView;
 @property (nonatomic, strong) LocationManager *locationManager;
-//@property (nonatomic, weak) NSString *placemarkName;
-//@property (nonatomic, weak) NSString *placemarkCountry;
 
 @end
 
@@ -35,19 +33,10 @@
     self.mapView = map;
     self.mapView.delegate = self;
     
-    //Локация и регион
-//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(self.locationManager.currentLocation.coordinate.latitude, self.locationManager.currentLocation.coordinate.longitude);
-//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate, 1000000, 1000000);
-//    [self.mapView setRegion:region animated:YES];
-    
-    //Метка
-    
 
     self.locationManager.locationCallback = ^(CLLocation *location) {
     
     [self addressFromLocation: location withCompletion:^(CLPlacemark *placemark) {
-//        self.placemarkName = placemark.name;
-//        self.placemarkCountry = placemark.country;
         
         MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, 1000000, 1000000);
         [self.mapView setRegion:region animated:YES];
@@ -61,27 +50,8 @@
         
     }];
     };
-    
-//    CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(self.locationManager.currentLocation.coordinate.latitude, self.locationManager.currentLocation.coordinate.longitude);
-//    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(coordinate, 1000000, 1000000);
-//    [self.mapView setRegion:region animated:YES];
-//
-//    MKPointAnnotation *annotation = [MKPointAnnotation new];
-//    annotation.title = @"SuperTitle";
-//    annotation.subtitle = @"Subtitle";
-//    annotation.coordinate = coordinate;
-//
-//    [self.mapView addAnnotation:annotation];
 
     [self.view addSubview:self.mapView];
-    
-    
-//    CLLocation *location = [[CLLocation alloc] initWithLatitude:55.752200 longitude:37.6155600];
-//    [self addressFromLocation:location];
-    
-    
-    
-//    [self locationFromAddress:@"Moscow, Nikolskay 23"];
     
 }
 

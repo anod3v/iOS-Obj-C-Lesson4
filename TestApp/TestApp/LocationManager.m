@@ -13,7 +13,6 @@ typedef void(^LocationCallback)(CLLocation *location);
 @interface LocationManager() <CLLocationManagerDelegate>
 
 @property (nonatomic, strong) CLLocationManager *manager;
-//@property (nonatomic, copy) LocationCallback locationCallback;
 
 @end
 
@@ -50,9 +49,6 @@ typedef void(^LocationCallback)(CLLocation *location);
     
     CLLocation *location = [locations firstObject];
     if (location) {
-        NSLog(@"Геолокация пользователя \n\n %@", location);
-//        self.currentLocation = location;
-        
         self.locationCallback(location);
     }
 }
