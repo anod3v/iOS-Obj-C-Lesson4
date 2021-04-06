@@ -13,6 +13,7 @@
 		5546523B25F66E3B0047F66C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5546523A25F66E3B0047F66C /* Assets.xcassets */; };
 		5546523E25F66E3B0047F66C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5546523C25F66E3B0047F66C /* LaunchScreen.storyboard */; };
 		5546524125F66E3B0047F66C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5546524025F66E3B0047F66C /* main.m */; };
+		55CF97032603EF6200A9DC93 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55CF97022603EF6200A9DC93 /* LocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,8 @@
 		5546523D25F66E3B0047F66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5546523F25F66E3B0047F66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5546524025F66E3B0047F66C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55CF97002603EEE100A9DC93 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		55CF97022603EF6200A9DC93 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				5546523225F66E380047F66C /* SceneDelegate.m */,
 				5546523425F66E380047F66C /* ViewController.h */,
 				5546523525F66E380047F66C /* ViewController.m */,
+				55CF97002603EEE100A9DC93 /* LocationManager.h */,
+				55CF97022603EF6200A9DC93 /* LocationManager.m */,
 				5546523A25F66E3B0047F66C /* Assets.xcassets */,
 				5546523C25F66E3B0047F66C /* LaunchScreen.storyboard */,
 				5546523F25F66E3B0047F66C /* Info.plist */,
@@ -142,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5546523625F66E380047F66C /* ViewController.m in Sources */,
+				55CF97032603EF6200A9DC93 /* LocationManager.m in Sources */,
 				5546523025F66E380047F66C /* AppDelegate.m in Sources */,
 				5546524125F66E3B0047F66C /* main.m in Sources */,
 				5546523325F66E380047F66C /* SceneDelegate.m in Sources */,
